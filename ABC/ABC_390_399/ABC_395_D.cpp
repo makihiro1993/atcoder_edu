@@ -19,9 +19,9 @@ using ll = long long;
 int main() {   
     ll N,Q;
     cin >> N>>Q;
-    // box_to_label : i 番目の巣に入っているラベル鳩の番号
-    // label_to_box : i 番目のラベル鳩が入っている巣の番号
-    // pigeon_to_box : i 番目の鳩が入っている巣の番号
+    // box_to_label : i 番目の巣に入っているラベル鳩の番号   巣→ラベル
+    // label_to_box : i 番目のラベル鳩が入っている巣の番号   ラベル→巣
+    // pigeon_to_box : i 番目の鳩が入っている巣の番号　　　　鳩→巣
     vector<ll> box_to_label(N), label_to_box(N), pigeon_to_box(N);
     for(ll i=1;i<=N;i++){
         box_to_label[i]=i;
